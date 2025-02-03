@@ -4,6 +4,7 @@
   justify-content: space-between;
   background: linear-gradient(to bottom, #f8c4c4, #ffffff);
   padding: 20px;
+  padding-top: 60px;
 }
 
 .hero-image {

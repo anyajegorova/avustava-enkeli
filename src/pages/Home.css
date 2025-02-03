@@ -1,0 +1,6 @@
+.services-container{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    width: 90%;
+}

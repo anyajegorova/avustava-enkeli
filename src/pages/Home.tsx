@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from '../ui/components/Hero'
 import Collapsible from '../ui/components/Collapsible'
 import './Home.css'
+import Title from '../ui/components/Title'
+import PriceCalculator from '../ui/components/PriceCalculator'
 
 const Home = () => {
     const services = {
@@ -21,8 +23,13 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut}/>
-            <Collapsible title="Avustajapalvelut" bulletPoints={services.siivouspalvelut}/>
+            <div className='services-container'>
+                <Title text="Palvelumme" />
+                <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} />
+                <Collapsible title="Avustajapalvelut" bulletPoints={services.siivouspalvelut} />
+            </div>
+            <PriceCalculator />
+
         </div>
     )
 }
