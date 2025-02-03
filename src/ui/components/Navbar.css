@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar-logo {
+  height: 3.125rem;
+  margin-right: 0.625rem;
+}
+
+.navbar-text {
+  font-size: 1.5rem;
+  color: black;
+}
