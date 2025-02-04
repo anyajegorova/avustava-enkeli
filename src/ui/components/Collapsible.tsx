@@ -5,9 +5,10 @@ import { DownOutlined, UpOutlined } from '@ant-design/icons'
 interface CollapsibleProps {
   title: string;
   bulletPoints: string[];
+  icon: React.ReactNode;
 }
 
-const Collapsible: React.FC<CollapsibleProps> = ({ title, bulletPoints }) => {
+const Collapsible: React.FC<CollapsibleProps> = ({ title, bulletPoints, icon }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -17,16 +18,17 @@ const Collapsible: React.FC<CollapsibleProps> = ({ title, bulletPoints }) => {
   return (
     <div className="collapsible-container">
       <div className="collapsible-header" onClick={toggleOpen}>
-        <span>{title}</span>
+        <div className="left-content">
+          <div className="icon-container">{icon}</div>
+          <span>{title}</span>
+        </div>
         {isOpen ? <UpOutlined /> : <DownOutlined />}
       </div>
-      {isOpen && (
-        <ul className="collapsible-content">
-          {bulletPoints.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
-      )}
+      <ul className={`collapsible-content ${isOpen ? 'open' : ''}`}>
+        {bulletPoints.map((point, index) => (
+          <li key={index}>{point}</li>
+        ))}
+      </ul>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import Collapsible from '../ui/components/Collapsible'
 import './Home.css'
 import Title from '../ui/components/Title'
 import PriceCalculator from '../ui/components/PriceCalculator'
+import { ClearOutlined, HeartOutlined } from '@ant-design/icons'
 
 const Home = () => {
     const services = {
@@ -25,8 +26,8 @@ const Home = () => {
             <Hero />
             <div className='services-container'>
                 <Title text="Palvelumme" />
-                <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} />
-                <Collapsible title="Avustajapalvelut" bulletPoints={services.siivouspalvelut} />
+                <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
+                <Collapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
             <PriceCalculator />
 
