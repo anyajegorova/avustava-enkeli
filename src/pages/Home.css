@@ -4,3 +4,10 @@
     margin: 6rem auto;
     width: 90%;
 }
+
+.intro-info-section-container{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    width: 90%;
+}

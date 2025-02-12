@@ -1,0 +1,96 @@
+.contact-form-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8c4c4;
+  padding: 2rem;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-info .company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  max-width: 600px;
+  align-items: center;
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.form-item textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.form-item input::placeholder,
+.form-item textarea::placeholder {
+  font-family: "Lato", serif;
+}
+
+.contact-form-page h1 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-form-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .contact-info {
+    text-align: left;
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+
+  .contact-form {
+    max-width: 600px;
+  }
+}

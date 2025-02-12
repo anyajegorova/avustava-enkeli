@@ -1,9 +1,10 @@
 import React from 'react'
-import './PriceCalculator.css'
+import '../styles/PriceCalculator.css'
 
 const PriceCalculator = () => {
   return (
     <div className='price-calculator-container'>
+      <div className='background-image'></div>
       Price Calculator
     </div>
   )

@@ -1,10 +1,28 @@
 .hero-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: linear-gradient(to bottom, #f8c4c4, #ffffff);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 50vh;
   padding: 20px;
   padding-top: 60px;
+  margin-top: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .hero-image {
@@ -15,19 +33,30 @@
 .hero-text {
   width: 50%;
   text-align: center;
+  padding: 20px;
+  color: white;
+  z-index: 1;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
   margin: 0;
+  padding: 1.2rem;
   font-family: "Lora", serif;
-  color: #EB7070;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin: 10px 0 0;
-  color: #2e2c2c;
+  padding: 0.5rem;
+  color: white; 
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

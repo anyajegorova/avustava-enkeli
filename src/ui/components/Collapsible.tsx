@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Collapsible.css'
+import '../styles/Collapsible.css'
 import { DownOutlined, UpOutlined } from '@ant-design/icons'
 
 interface CollapsibleProps {

@@ -1,14 +1,18 @@
 import React from 'react'
-import './CustomButton.css'
+import '../styles/CustomButton.css'
 
 interface CustomButtonProps {
   text: string;
   onClick: () => void;
+  filled?: boolean;
 }
 
-const CustomButton: React.FC<CustomButtonProps> = ({ text, onClick }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ text, onClick, filled = true }) => {
   return (
-    <button className="custom-button" onClick={onClick}>
+    <button
+      className={`custom-button ${filled ? '' : 'transparent'}`}
+      onClick={onClick}
+    >
       {text}
     </button>
   )
