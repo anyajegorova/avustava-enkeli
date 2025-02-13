@@ -1,5 +1,4 @@
 .custom-button {
-  flex: 1;
   background-color: #0081AF;
   color: #FFFFFF; 
   border: none;
@@ -8,7 +7,6 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%;
 }
 
 .custom-button:hover {

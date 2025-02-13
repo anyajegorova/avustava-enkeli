@@ -8,6 +8,9 @@ import WhyChooseUs from '../ui/components/WhyChooseUs'
 import IntroInfoSection from '../ui/components/IntroInfoSection'
 import Footer from '../ui/components/Footer'
 import ContactForm2 from '../ui/components/ContactForm2'
+import NonCollapsible from '../ui/components/NonCollapsible'
+import Pricing from '../ui/components/Pricing'
+import CleaningDuration from '../ui/components/CleaningDuration' // Import the new component
 
 const Home = () => {
     const services = {
@@ -33,9 +36,13 @@ const Home = () => {
 
             <div className='services-container'>
                 <Title text="Palvelumme" />
-                <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
-                <Collapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
+                {/* <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
+                <Collapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} /> */}
+                <NonCollapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
+                <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
+            <Pricing />
+            <CleaningDuration /> {/* Render the new component */}
             <WhyChooseUs />
             <div className='contact-form-section-container'>
                 <ContactForm2 />

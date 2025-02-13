@@ -1,0 +1,106 @@
+.non-collapsible-container {
+  width: 100%;
+  margin: 1.25rem auto;
+  border: 0.0625rem solid #e0e0e0;
+  border-radius: 0.375rem;
+  background-color: #fff;
+}
+
+.non-collapsible-header {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.non-collapsible-header .left-content {
+  display: flex;
+  align-items: center;
+}
+
+.non-collapsible-header .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin-right: 1rem;
+}
+
+.non-collapsible-header .icon-container svg {
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.non-collapsible-content {
+  padding: 1.25rem 3.75rem;
+  color: #333333;
+}
+
+.non-collapsible-content li {
+  margin-bottom: 0.625rem;
+  font-size: 1.2em;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.5rem;
+  list-style: none; 
+}
+
+.non-collapsible-content li::before {
+  content: '\2713'; /* Check mark icon */
+  position: absolute;
+  left: 0;
+  color: #28a745; /* Green color for check mark */
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .non-collapsible-container {
+    margin: 1rem auto;
+  }
+
+  .non-collapsible-header {
+    font-size: 1.2em;
+    padding: 1rem;
+  }
+
+  .non-collapsible-content {
+    padding: 1rem 2rem;
+  }
+
+  .non-collapsible-content li {
+    font-size: 1em;
+  }
+
+  .non-collapsible-content li::before {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .non-collapsible-container {
+    margin: 0.75rem auto;
+  }
+
+  .non-collapsible-header {
+    font-size: 1em;
+    padding: 0.75rem;
+  }
+
+  .non-collapsible-content {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .non-collapsible-content li {
+    font-size: 0.9em;
+  }
+
+  .non-collapsible-content li::before {
+    font-size: 1em;
+  }
+}
