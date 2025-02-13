@@ -3,9 +3,9 @@ import '../styles/Footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <footer className="footer-container">
+      © 2025 Avustava Enkeli. All Rights Reserved.
+    </footer>
   )
 }
 

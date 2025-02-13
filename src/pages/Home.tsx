@@ -4,10 +4,10 @@ import Collapsible from '../ui/components/Collapsible'
 import './Home.css'
 import Title from '../ui/components/Title'
 import { ClearOutlined, HeartOutlined } from '@ant-design/icons'
-import ContactForm from '../ui/components/ContactForm'
 import WhyChooseUs from '../ui/components/WhyChooseUs'
-import Footer from '../ui/components/Footer'
 import IntroInfoSection from '../ui/components/IntroInfoSection'
+import Footer from '../ui/components/Footer'
+import ContactForm2 from '../ui/components/ContactForm2'
 
 const Home = () => {
     const services = {
@@ -28,16 +28,18 @@ const Home = () => {
         <div>
             <Hero />
             <div className='intro-info-section-container'>
-               <IntroInfoSection /> 
+                <IntroInfoSection />
             </div>
-            
+
             <div className='services-container'>
                 <Title text="Palvelumme" />
                 <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
                 <Collapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
             <WhyChooseUs />
-            <ContactForm />
+            <div className='contact-form-section-container'>
+                <ContactForm2 />
+            </div>
             <Footer />
         </div>
     )

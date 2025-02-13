@@ -1,0 +1,174 @@
+.contact-form-container {
+    display: flex;
+    gap: 2rem;
+    margin: 6rem auto;
+    width: 90%;
+    justify-content: center;
+}
+.line {
+  height: 0.4rem;
+  background: #000000;
+  width: 6rem;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.form-item label {
+  margin-bottom: 0.25rem;
+}
+
+.contact-form {
+  max-width: 600px;
+}
+
+.name-surname-container,
+.contact-info-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.dropdown-container select {
+  margin-bottom: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.button-container .custom-button{
+    width: 100%;
+}
+
+.form-item input,
+.form-item textarea,
+.form-item select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.form-item select{
+    background-color: white;
+    color: #333;
+}
+
+.form-item select option {
+  background-color: white;
+  color: #333;
+}
+
+.form-item select option:checked {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.form-item select option:disabled {
+  color: #999;
+}
+
+.form-item textarea {
+  resize: none;
+  height: 150px;
+}
+
+.form-item input::placeholder,
+.form-item textarea::placeholder {
+  font-family: "Lato", serif;
+}
+
+.contact-description {
+  max-width: 400px;
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.company-contact-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.company-contact-info-container li {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.company-contact-info-container .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+}
+
+.company-contact-info-container .icon-container svg {
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.company-contact-info-container h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.company-contact-info-container p {
+    margin: 0.25rem 0 1rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+  .name-surname-container,
+  .contact-info-container,
+  .contact-form-container {
+    flex-direction: column;
+  }
+  .company-contact-info-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-item input,
+  .form-item textarea,
+  .form-item select {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .company-contact-info-container {
+    grid-template-columns: 1fr;
+  }
+
+  .company-contact-info-container li {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .company-contact-info-container .icon-container {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+  }
+}
