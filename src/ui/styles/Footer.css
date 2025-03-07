@@ -2,3 +2,8 @@
   background-color: #f8c4c4;
   padding: 1rem;
 }
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #555; 
+}

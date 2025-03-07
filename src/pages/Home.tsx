@@ -42,7 +42,9 @@ const Home = () => {
                 <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
             <Pricing />
-            <CleaningDuration /> {/* Render the new component */}
+            <div style={{ margin: '4rem 0' }}></div>
+            <CleaningDuration />
+            <div style={{ margin: '4rem 0' }}></div>
             <WhyChooseUs />
             <div className='contact-form-section-container'>
                 <ContactForm2 />

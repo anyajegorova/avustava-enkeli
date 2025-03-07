@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero-container" style={{ backgroundImage: `url(${CleaningLady2})` }}>
       <div className="hero-overlay">
         <div className="hero-text">
-          <h1>Kotisiivous: alk.29,80€/tunti</h1>
+          <h1>Kotisiivous: alk.41,50€/tunti</h1>
           <p>Luotettavia ja laadukkaita siivous- ja avustajapalveluita</p>
           <div className="hero-buttons">
             <CustomButton text="Ota yhteyttä" onClick={() => console.log('Clicked')} />
