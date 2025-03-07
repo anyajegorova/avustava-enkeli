@@ -16,7 +16,9 @@ Avustava Enkeli is a web application offering professional cleaning and assistan
 ### Features
 
 - **Home Page**: Introduction to services, pricing, and contact information.
-- **Collapsible Sections**: Detailed information about cleaning and assistant services.
+- **Services Sections**: Detailed information about cleaning and assistant services.
+- **Pricing table**: Detailed information pricing of different services.
+- **Estimated hours table**: Estimated hours of cleaning duration.
 - **Contact Form**: Easy-to-use form for customers to get in touch.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
