@@ -1,0 +1,20 @@
+.price-calculator-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 2)), url('../../assets/images/more-leaves.png');
+    background-repeat: repeat;
+    opacity: 1; 
+    z-index: -1;
+}

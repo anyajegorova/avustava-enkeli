@@ -1,0 +1,21 @@
+.services-container{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    width: 90%;
+}
+
+.intro-info-section-container{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    width: 90%;
+}
+
+.contact-form-section-container{
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    width: 90%;
+    background-color: #f9f9f9;
+}
