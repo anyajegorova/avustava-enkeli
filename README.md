@@ -44,18 +44,6 @@ To get started with this project, follow these steps:
    npm install
    ```
 
-3. **Run the development server:**
-   ```sh
-   npm run dev
-   ```
-
-### Building for Production
-
-To build the project for production, run:
-```sh
-npm run build
-```
-
 ### Folder Structure
 
 - **src/**: Contains the source code of the project.
@@ -63,10 +51,10 @@ npm run build
 
 ### Website Screenshots
 
-![Home Page](./screenshots/home-page.png)
-![Services](./screenshots/services.png)
-![Why Choose Us](./screenshots/why-choose-us.png)
-![Contact Us](./screenshots/contact-form.png)
-![Pricing](./screenshots/pricing.png)
-![Cleaning Duration Estimate](./screenshots/hours.png)
+![Home Page](./src/assets/screenshots/home-page.png)
+![Services](./src/assets/screenshots/services.png)
+![Why Choose Us](./src/assets/screenshots/why-choose-us.png)
+![Contact Us](./src/assets/screenshots/contact-form.png)
+![Pricing](./src/assets/screenshots/pricing.png)
+![Cleaning Duration Estimate](./src/assets/screenshots/hours.png)
 
