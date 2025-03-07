@@ -54,7 +54,6 @@ To get started with this project, follow these steps:
 ![Home Page](./src/assets/screenshots/home-page.png)
 ![Services](./src/assets/screenshots/services.png)
 ![Why Choose Us](./src/assets/screenshots/why-choose-us.png)
-![Contact Us](./src/assets/screenshots/contact-form.png)
 ![Pricing](./src/assets/screenshots/pricing.png)
 ![Cleaning Duration Estimate](./src/assets/screenshots/hours.png)
-
+![Contact Us](./src/assets/screenshots/contact-form.png)
