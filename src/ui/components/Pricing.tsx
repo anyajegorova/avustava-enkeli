@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Pricing.css';
 import { RobotOutlined, ClearOutlined } from '@ant-design/icons';
 

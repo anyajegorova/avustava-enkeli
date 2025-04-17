@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/Hero.css'
 import CustomButton from './CustomButton'
 import CleaningLady2 from '../../assets/images/cleaning-lady2.webp'

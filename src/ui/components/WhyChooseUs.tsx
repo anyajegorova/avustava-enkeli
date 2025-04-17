@@ -1,4 +1,3 @@
-import React from 'react'
 import Title from './Title'
 import '../styles/WhyChooseUs.css'
 import { EnvironmentOutlined, ToolOutlined, SafetyOutlined, SyncOutlined } from '@ant-design/icons';

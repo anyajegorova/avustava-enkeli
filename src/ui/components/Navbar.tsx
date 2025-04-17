@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/Navbar.css'
 import AvustavaEnkeliLogo from '../../assets/logos/avustava-enkeli-logo.png'
 

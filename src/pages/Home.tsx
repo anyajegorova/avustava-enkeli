@@ -1,6 +1,4 @@
-import React from 'react'
 import Hero from '../ui/components/Hero'
-import Collapsible from '../ui/components/Collapsible'
 import './Home.css'
 import Title from '../ui/components/Title'
 import { ClearOutlined, HeartOutlined } from '@ant-design/icons'
@@ -36,8 +34,6 @@ const Home = () => {
 
             <div className='services-container'>
                 <Title text="Palvelumme" />
-                {/* <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
-                <Collapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} /> */}
                 <NonCollapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
                 <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>

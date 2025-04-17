@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/ContactForm2.css'
 import CustomButton from './CustomButton'
 import { MailOutlined, PhoneOutlined, HomeOutlined } from '@ant-design/icons'

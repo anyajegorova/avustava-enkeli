@@ -1,4 +1,3 @@
-import React from 'react'
 import CleaningLady from '../../assets/images/cleaning-lady.webp'
 import '../styles/IntroInfoSection.css'
 
