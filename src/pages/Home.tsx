@@ -37,15 +37,16 @@ const Home = () => {
                 <NonCollapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
                 <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
+            <div className='whychooseus-section-container'>
+                <WhyChooseUs />
+            </div>
             <div className='pricing-section-container'>
                 <Pricing />
             </div>
             <div className='cleaning-duration-section-container'>
                 <CleaningDuration />
             </div>
-            <div className='whychooseus-section-container'>
-                <WhyChooseUs />
-            </div>
+
             <div className='contact-form-section-container'>
                 <ContactForm2 />
             </div>
