@@ -1,35 +1,50 @@
-import React from 'react'
 import Title from './Title'
 import '../styles/WhyChooseUs.css'
 import { EnvironmentOutlined, ToolOutlined, SafetyOutlined, SyncOutlined } from '@ant-design/icons';
+import Reveal from '../../reveal_components/Reveal';
+import { useTranslation } from 'react-i18next';
 
 const WhyChooseUs = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="why-choose-us-container">
-      <Title text="Miksi valita meidät?" />
+      <Title text={t('why_choose_us.title')} />
+      
       <div className="section">
-        <EnvironmentOutlined className="icon" />
-        <h2>PAIKALLISSUUS</h2>
-        <hr />
-        <p>Olemme lähellä ja ymmärrämme sinun tarpeesi.</p>
+        <Reveal>
+          <EnvironmentOutlined className="icon" />
+          <h2>{t('why_choose_us.locality.title')}</h2>
+          <hr />
+          <p>{t('why_choose_us.locality.description')}</p>
+        </Reveal>
       </div>
+
       <div className="section">
-        <ToolOutlined className="icon" />
-        <h2>AMMATTITAITO</h2>
-        <hr />
-        <p>Voit luottaa meihin ja palvelumme korkeaan tasoon.</p>
+        <Reveal>
+          <ToolOutlined className="icon" />
+          <h2>{t('why_choose_us.professionalism.title')}</h2>
+          <hr />
+          <p>{t('why_choose_us.professionalism.description')}</p>
+        </Reveal>
       </div>
+
       <div className="section">
-        <SafetyOutlined className="icon" />
-        <h2>LUOTETTAVUUS</h2>
-        <hr />
-        <p>Työnjälkemme on huolellista ja laadukasta.</p>
+        <Reveal>
+          <SafetyOutlined className="icon" />
+          <h2>{t('why_choose_us.reliability.title')}</h2>
+          <hr />
+          <p>{t('why_choose_us.reliability.description')}</p>
+        </Reveal>
       </div>
+
       <div className="section">
-        <SyncOutlined className="icon" />
-        <h2>JOUSTAVUUS</h2>
-        <hr />
-        <p>Räätälöimme palvelut elämäntilanteesi mukaan.</p>
+        <Reveal>
+          <SyncOutlined className="icon" />
+          <h2>{t('why_choose_us.flexibility.title')}</h2>
+          <hr />
+          <p>{t('why_choose_us.flexibility.description')}</p>
+        </Reveal>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
-import React from 'react'
+import { useRef } from 'react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 import Hero from '../ui/components/Hero'
-import Collapsible from '../ui/components/Collapsible'
 import './Home.css'
 import Title from '../ui/components/Title'
 import { ClearOutlined, HeartOutlined } from '@ant-design/icons'
@@ -13,40 +13,46 @@ import Pricing from '../ui/components/Pricing'
 import CleaningDuration from '../ui/components/CleaningDuration' // Import the new component
 
 const Home = () => {
+    const { t } = useTranslation();
+    const contactFormRef = useRef<HTMLDivElement | null>(null)
+    const servicesRef = useRef<HTMLDivElement | null>(null)
+
     const services = {
-        'siivouspalvelut': [
-            'Kotisiivous: ylläpitosiivoukset ja suursiivoukset',
-            'Ikkunoiden pesu ja muuttosiivoukset',
-            'Joustavat aikataulut, siivous silloin, kun sinulle sopii',
-            'Käytössämme on laitteet ja pesurit jotka nopeuttavat palvelua huomattavasti ja tuovat sinulle säästöä siivouspalveluista',
-        ],
-        'avustajapalvelut': [
-            'Kauppa- ja asiointiapu, ruoanlaitto',
-            'Kodinhoitotyöt, kuten pyykkihuolto ja järjestely',
-            'Juhlien järjestelyapu ja tarjoilijana toimiminen',
-            'Muut erilaiset kotipalvelut ja henkilökohtaiset palvelut'
-        ]
+        siivouspalvelut: Array.isArray(t("Cleaning Services", { returnObjects: true })) ? t("Cleaning Services", { returnObjects: true }) as string[] : [],
+        avustajapalvelut: Array.isArray(t("Assistant Services", { returnObjects: true })) ? t("Assistant Services", { returnObjects: true }) as string[] : []
+    };
+
+    const scrollToContactForm = () => {
+        contactFormRef?.current?.scrollIntoView({ behavior: 'smooth' })
     }
+
+    const scrollToServices = () => {
+        servicesRef?.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <div>
-            <Hero />
+            <Hero scrollToContactForm={scrollToContactForm} scrollToServices={scrollToServices} />
             <div className='intro-info-section-container'>
                 <IntroInfoSection />
             </div>
 
-            <div className='services-container'>
-                <Title text="Palvelumme" />
-                {/* <Collapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
-                <Collapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} /> */}
-                <NonCollapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
-                <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
+            <div className='services-container' ref={servicesRef}>
+                <Title text={t("services_title")} />
+                <NonCollapsible title={t("cleaning_services")} bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
+                <NonCollapsible title={t("assistance_services")} bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
-            <Pricing />
-            <div style={{ margin: '4rem 0' }}></div>
-            <CleaningDuration />
-            <div style={{ margin: '4rem 0' }}></div>
-            <WhyChooseUs />
-            <div className='contact-form-section-container'>
+            <div className='whychooseus-section-container'>
+                <WhyChooseUs />
+            </div>
+            <div className='pricing-section-container'>
+                <Pricing />
+            </div>
+            <div className='cleaning-duration-section-container'>
+                <CleaningDuration />
+            </div>
+
+            <div className='contact-form-section-container' ref={contactFormRef}>
                 <ContactForm2 />
             </div>
             <Footer />

@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/Navbar.css'
 import AvustavaEnkeliLogo from '../../assets/logos/avustava-enkeli-logo.png'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true)
@@ -26,6 +27,9 @@ const Navbar = () => {
     <div className={`navbar ${showNavbar ? 'visible' : 'hidden'}`}>
       <img src={AvustavaEnkeliLogo} alt="Avustava Enkeli Logo" className="navbar-logo" />
       <span className="navbar-text">Avustava Enkeli</span>
+      <div className="navbar-language-switcher">
+        <LanguageSwitcher />
+      </div>
     </div>
   )
 }

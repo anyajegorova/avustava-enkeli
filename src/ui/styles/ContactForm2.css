@@ -139,6 +139,48 @@
     color: #666;
 }
 
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  .contact-form-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .name-surname-container,
+  .contact-info-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .contact-description {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .company-contact-info-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .form-item input,
+  .form-item textarea,
+  .form-item select {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+
+  .button-container .custom-button {
+    max-width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .name-surname-container,
   .contact-info-container,
@@ -147,6 +189,9 @@
   }
   .company-contact-info-container {
     grid-template-columns: 1fr;
+  }
+  form {
+    width: 100%;
   }
 }
 

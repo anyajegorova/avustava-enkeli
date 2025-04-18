@@ -1,19 +1,31 @@
-import React from 'react'
 import '../styles/Hero.css'
 import CustomButton from './CustomButton'
 import CleaningLady2 from '../../assets/images/cleaning-lady2.webp'
+import Reveal from '../../reveal_components/Reveal'
+import { useTranslation } from 'react-i18next'
 
-const Hero = () => {
+interface HeroProps {
+  scrollToContactForm: () => void;
+  scrollToServices: () => void;
+}
+
+const Hero = ({ scrollToContactForm, scrollToServices }: HeroProps) => {
+  const { t } = useTranslation();
+
   return (
     <div className="hero-container" style={{ backgroundImage: `url(${CleaningLady2})` }}>
       <div className="hero-overlay">
         <div className="hero-text">
-          <h1>Kotisiivous: alk.41,50€/tunti</h1>
-          <p>Luotettavia ja laadukkaita siivous- ja avustajapalveluita</p>
-          <div className="hero-buttons">
-            <CustomButton text="Ota yhteyttä" onClick={() => console.log('Clicked')} />
-            <CustomButton text="Lue lisää" onClick={() => console.log('Clicked')} filled={false} />
-          </div>
+
+          <Reveal>
+            <h1>{t('hero.title')}</h1>
+            <p>{t('hero.subtitle')}</p>
+            <div className="hero-buttons">
+              <CustomButton text={t('hero.contact_button')} onClick={scrollToContactForm} />
+              <CustomButton text={t('hero.learn_more_button')} onClick={scrollToServices} filled={false} />
+            </div>
+          </Reveal>
+
         </div>
       </div>
     </div>
