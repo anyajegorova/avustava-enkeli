@@ -18,8 +18,8 @@ const Home = () => {
     const servicesRef = useRef<HTMLDivElement | null>(null)
 
     const services = {
-        siivouspalvelut: t("Cleaning Services", { returnObjects: true }),
-        avustajapalvelut: t("Assistant Services", { returnObjects: true })
+        siivouspalvelut: Array.isArray(t("Cleaning Services", { returnObjects: true })) ? t("Cleaning Services", { returnObjects: true }) as string[] : [],
+        avustajapalvelut: Array.isArray(t("Assistant Services", { returnObjects: true })) ? t("Assistant Services", { returnObjects: true }) as string[] : []
     };
 
     const scrollToContactForm = () => {

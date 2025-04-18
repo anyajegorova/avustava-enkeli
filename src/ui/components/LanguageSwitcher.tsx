@@ -1,5 +1,6 @@
-import i18n from "../../utils/i18n";
+import React from "react";
 import '../styles/LanguageSwitcher.css';
+import i18n from 'i18next';
 
 const LanguageSwitcher = () => {
   const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
