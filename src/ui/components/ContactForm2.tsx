@@ -49,8 +49,8 @@ const ContactForm2 = () => {
                     </div>
                 </div>
             </Reveal>
-            <Reveal>
-                <form className='contact-form'>
+            <form className='contact-form'>
+                <Reveal width='100%'>
                     <div className='name-surname-container'>
                         <div className='form-item'>
                             <label htmlFor="etunimi">Etunimi <span style={{ color: 'red' }}>*</span></label>
@@ -84,12 +84,12 @@ const ContactForm2 = () => {
                         <label htmlFor="tarkemmatTiedot">Tarkemmat tiedot</label>
                         <textarea id="tarkemmatTiedot" name="tarkemmatTiedot" placeholder="Tarkemmat tiedot"></textarea>
                     </div>
-                    <p style={{ color: 'red' }}>* Pakollinen kenttä</p> {/* Explanation moved */}
+                    <p style={{ color: 'red' }}>* Pakollinen kenttä</p>
                     <div className="form-item button-container">
                         <CustomButton text="Lähetä" onClick={() => { /* handle form submission */ }} />
                     </div>
-                </form>
-            </Reveal>
+                </Reveal>
+            </form>
         </div>
     )
 }
