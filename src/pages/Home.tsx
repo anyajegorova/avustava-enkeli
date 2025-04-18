@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import Hero from '../ui/components/Hero'
 import './Home.css'
 import Title from '../ui/components/Title'
@@ -11,6 +12,9 @@ import Pricing from '../ui/components/Pricing'
 import CleaningDuration from '../ui/components/CleaningDuration' // Import the new component
 
 const Home = () => {
+    const contactFormRef = useRef<HTMLDivElement | null>(null)
+    const servicesRef = useRef<HTMLDivElement | null>(null)
+
     const services = {
         'siivouspalvelut': [
             'Kotisiivous: ylläpitosiivoukset ja suursiivoukset',
@@ -25,14 +29,23 @@ const Home = () => {
             'Muut erilaiset kotipalvelut ja henkilökohtaiset palvelut'
         ]
     }
+
+    const scrollToContactForm = () => {
+        contactFormRef?.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+
+    const scrollToServices = () => {
+        servicesRef?.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <div>
-            <Hero />
+            <Hero scrollToContactForm={scrollToContactForm} scrollToServices={scrollToServices} />
             <div className='intro-info-section-container'>
                 <IntroInfoSection />
             </div>
 
-            <div className='services-container'>
+            <div className='services-container' ref={servicesRef}>
                 <Title text="Palvelumme" />
                 <NonCollapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
                 <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
@@ -47,7 +60,7 @@ const Home = () => {
                 <CleaningDuration />
             </div>
 
-            <div className='contact-form-section-container'>
+            <div className='contact-form-section-container' ref={contactFormRef}>
                 <ContactForm2 />
             </div>
             <Footer />
