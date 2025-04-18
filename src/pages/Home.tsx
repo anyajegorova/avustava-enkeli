@@ -38,7 +38,7 @@ const Home = () => {
             </div>
 
             <div className='services-container' ref={servicesRef}>
-                <Title text="Palvelumme" />
+                <Title text={t("services_title")} />
                 <NonCollapsible title={t("cleaning_services")} bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
                 <NonCollapsible title={t("assistance_services")} bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>

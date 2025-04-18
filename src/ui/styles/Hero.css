@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   padding: 1.25rem;
   color: white;
   z-index: 1;
@@ -53,6 +53,7 @@
   margin: 0.625rem 0 0;
   padding: 0.5rem;
   color: white; 
+  text-align: center;
 }
 
 .hero-buttons {
