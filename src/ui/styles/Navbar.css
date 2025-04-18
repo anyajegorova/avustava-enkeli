@@ -64,6 +64,9 @@
   .navbar-text {
     font-size: 1.25rem;
   }
+  .navbar-language-switcher {
+    padding-right: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -79,5 +82,8 @@
 
   .navbar-text {
     font-size: 1rem;
+  }
+  .navbar-language-switcher {
+    padding-right: 2rem;
   }
 }
