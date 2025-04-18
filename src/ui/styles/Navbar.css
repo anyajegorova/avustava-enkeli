@@ -30,6 +30,26 @@
   color: black;
 }
 
+.navbar-language-switcher {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar-language-switcher button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-language-switcher button:hover {
+  background-color: #e0e0e0;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 0.5rem 1rem;

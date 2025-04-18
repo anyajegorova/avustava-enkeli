@@ -1,0 +1,38 @@
+{
+  "en": {
+    "translation": {
+      "Cleaning Services": [
+        "Home cleaning: maintenance and deep cleaning",
+        "Window cleaning and moving cleaning",
+        "Flexible schedules, cleaning when it suits you",
+        "We use equipment and washers that significantly speed up the service and save you money on cleaning services"
+      ],
+      "cleaning_services": "Cleaning Services",
+      "assistance_services": "Assistance Services",
+      "Assistant Services": [
+        "Shopping and errands, cooking",
+        "Household chores, such as laundry and organizing",
+        "Party arrangement assistance and serving",
+        "Other various home services and personal services"
+      ]
+    }
+  },
+  "fi": {
+    "translation": {
+      "Cleaning Services": [
+        "Kotisiivous: ylläpitosiivoukset ja suursiivoukset",
+        "Ikkunoiden pesu ja muuttosiivoukset",
+        "Joustavat aikataulut, siivous silloin, kun sinulle sopii",
+        "Käytössämme on laitteet ja pesurit jotka nopeuttavat palvelua huomattavasti ja tuovat sinulle säästöä siivouspalveluista"
+      ],
+      "cleaning_services": "Siivouspalvelut",
+      "assistance_services": "Avustajapalvelut",
+      "Assistant Services": [
+        "Kauppa- ja asiointiapu, ruoanlaitto",
+        "Kodinhoitotyöt, kuten pyykkihuolto ja järjestely",
+        "Juhlien järjestelyapu ja tarjoilijana toimiminen",
+        "Muut erilaiset kotipalvelut ja henkilökohtaiset palvelut"
+      ]
+    }
+  }
+}

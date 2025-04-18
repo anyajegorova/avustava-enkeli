@@ -1,4 +1,5 @@
-import { useRef } from 'react'
+import { useRef } from 'react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 import Hero from '../ui/components/Hero'
 import './Home.css'
 import Title from '../ui/components/Title'
@@ -12,23 +13,14 @@ import Pricing from '../ui/components/Pricing'
 import CleaningDuration from '../ui/components/CleaningDuration' // Import the new component
 
 const Home = () => {
+    const { t } = useTranslation();
     const contactFormRef = useRef<HTMLDivElement | null>(null)
     const servicesRef = useRef<HTMLDivElement | null>(null)
 
     const services = {
-        'siivouspalvelut': [
-            'Kotisiivous: ylläpitosiivoukset ja suursiivoukset',
-            'Ikkunoiden pesu ja muuttosiivoukset',
-            'Joustavat aikataulut, siivous silloin, kun sinulle sopii',
-            'Käytössämme on laitteet ja pesurit jotka nopeuttavat palvelua huomattavasti ja tuovat sinulle säästöä siivouspalveluista',
-        ],
-        'avustajapalvelut': [
-            'Kauppa- ja asiointiapu, ruoanlaitto',
-            'Kodinhoitotyöt, kuten pyykkihuolto ja järjestely',
-            'Juhlien järjestelyapu ja tarjoilijana toimiminen',
-            'Muut erilaiset kotipalvelut ja henkilökohtaiset palvelut'
-        ]
-    }
+        siivouspalvelut: t("Cleaning Services", { returnObjects: true }),
+        avustajapalvelut: t("Assistant Services", { returnObjects: true })
+    };
 
     const scrollToContactForm = () => {
         contactFormRef?.current?.scrollIntoView({ behavior: 'smooth' })
@@ -47,8 +39,8 @@ const Home = () => {
 
             <div className='services-container' ref={servicesRef}>
                 <Title text="Palvelumme" />
-                <NonCollapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
-                <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
+                <NonCollapsible title={t("cleaning_services")} bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
+                <NonCollapsible title={t("assistance_services")} bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
             <div className='whychooseus-section-container'>
                 <WhyChooseUs />
