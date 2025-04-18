@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center top;
   position: relative;
-  height: 70vh;
+  height: calc(100vh - 4rem); /* Adjusted for navbar height */
   padding: 1.25rem;
   padding-top: 3.75rem;
   margin-top: 0;
