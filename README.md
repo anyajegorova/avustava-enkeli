@@ -21,6 +21,7 @@ Avustava Enkeli is a web application offering professional cleaning and assistan
 - **Estimated hours table**: Estimated hours of cleaning duration.
 - **Contact Form**: Easy-to-use form for customers to get in touch.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Multilingual Support**: The website is available in Finnish and English.
 
 ### Technologies Used
 
@@ -30,6 +31,8 @@ Avustava Enkeli is a web application offering professional cleaning and assistan
 - **ESLint**: Linting utility for JavaScript and TypeScript.
 - **Ant Design Icons**: Icon library for React.
 - **FontAwesome**: Icon library for scalable vector icons.
+- **i18next**: Internationalization framework for translating and managing localization.
+- **framer-motion**: Library for animations and gestures in React.
 
 ### Getting Started
 
@@ -51,11 +54,4 @@ To get started with this project, follow these steps:
 - **src/**: Contains the source code of the project.
 - **public/**: Contains static assets.
 
-### Website Screenshots
-
-![Home Page](./src/assets/screenshots/home-page.png)
-![Services](./src/assets/screenshots/services.png)
-![Why Choose Us](./src/assets/screenshots/why-choose-us.png)
-![Pricing](./src/assets/screenshots/pricing.png)
-![Cleaning Duration Estimate](./src/assets/screenshots/hours.png)
-![Contact Us](./src/assets/screenshots/contact-form.png)
+### Website Live
