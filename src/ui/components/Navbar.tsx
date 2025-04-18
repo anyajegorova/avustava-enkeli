@@ -25,8 +25,10 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${showNavbar ? 'visible' : 'hidden'}`}>
-      <img src={AvustavaEnkeliLogo} alt="Avustava Enkeli Logo" className="navbar-logo" />
-      <span className="navbar-text">Avustava Enkeli</span>
+      <div className="navbar-left">
+        <img src={AvustavaEnkeliLogo} alt="Avustava Enkeli Logo" className="navbar-logo" />
+        <span className="navbar-text">Avustava Enkeli</span>
+      </div>
       <div className="navbar-language-switcher">
         <LanguageSwitcher />
       </div>
