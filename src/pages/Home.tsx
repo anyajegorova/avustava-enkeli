@@ -37,11 +37,15 @@ const Home = () => {
                 <NonCollapsible title="Siivouspalvelut" bulletPoints={services.siivouspalvelut} icon={<ClearOutlined />} />
                 <NonCollapsible title="Avustajapalvelut" bulletPoints={services.avustajapalvelut} icon={<HeartOutlined />} />
             </div>
-            <Pricing />
-            <div style={{ margin: '4rem 0' }}></div>
-            <CleaningDuration />
-            <div style={{ margin: '4rem 0' }}></div>
-            <WhyChooseUs />
+            <div className='pricing-section-container'>
+                <Pricing />
+            </div>
+            <div className='cleaning-duration-section-container'>
+                <CleaningDuration />
+            </div>
+            <div className='whychooseus-section-container'>
+                <WhyChooseUs />
+            </div>
             <div className='contact-form-section-container'>
                 <ContactForm2 />
             </div>
