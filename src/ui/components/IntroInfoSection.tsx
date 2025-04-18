@@ -1,14 +1,17 @@
 import CleaningLady from '../../assets/images/cleaning-lady.webp'
 import '../styles/IntroInfoSection.css'
 import Reveal from '../../reveal_components/Reveal'
+import { useTranslation } from 'react-i18next'
 
 function IntroInfoSection() {
+    const { t } = useTranslation();
+
     return (
         <section className='intro-info-section'>
             <div className='info-section-container'>
                 <Reveal>
-                    <h1>Siivous- ja avustajapalvelut kotitalouksille Vantaalla</h1>
-                    <p>Arjen kiireet voivat joskus tuntua ylitsepääsemättömiltä, mutta me olemme täällä auttamassa! Tarjoamme ammattitaitoisia siivous- ja avustajapalveluja, jotka tekevät elämästäsi helpompaa ja mukavampaa. Olemme paikallinen yritys, ja meiltä saat henkilökohtaista ja joustavaa palvelua juuri sinun tarpeisiisi.</p>
+                    <h1>{t('intro_info.title')}</h1>
+                    <p>{t('intro_info.description')}</p>
                 </Reveal>
             </div>
             <div className='info-section-image-container'>
@@ -16,7 +19,6 @@ function IntroInfoSection() {
                     <img src={CleaningLady} alt="Image of a lady cleaning" className="info-section-image" />
                 </Reveal>
             </div>
-
         </section>
     )
 }

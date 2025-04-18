@@ -2,58 +2,61 @@ import '../styles/Pricing.css';
 import { RobotOutlined, ClearOutlined } from '@ant-design/icons';
 import Title from './Title';
 import Reveal from '../../reveal_components/Reveal';
+import { useTranslation } from 'react-i18next';
 
 const Pricing = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <Title text='Palvelujen hinnottelu' />
+      <Title text={t('pricing.title')} />
       <Reveal width='100%'>
         <div className="pricing-container">
           <table className="pricing-table">
             <thead>
               <tr>
-                <th>Siivouspalvelut</th>
-                <th>Avustajapalvelut</th>
+                <th>{t('pricing.cleaning_services')}</th>
+                <th>{t('pricing.assistance_services')}</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td colSpan={2} className="center-text">1-2 viikon välein</td>
+                <td colSpan={2} className="center-text">{t('pricing.frequency.biweekly')}</td>
               </tr>
               <tr>
-                <td className="price">49 €/h *</td>
-                <td className="price">41,50 €/h *</td>
+                <td className="price">{t('pricing.cleaning_price.biweekly')}</td>
+                <td className="price">{t('pricing.assistance_price.biweekly')}</td>
               </tr>
               <tr>
-                <td colSpan={2} className="center-text">Kerran kuussa tai kertakäynti</td>
+                <td colSpan={2} className="center-text">{t('pricing.frequency.monthly')}</td>
               </tr>
               <tr>
-                <td className="price">59 €/h *</td>
-                <td className="price">51,50 €/h *</td>
+                <td className="price">{t('pricing.cleaning_price.monthly')}</td>
+                <td className="price">{t('pricing.assistance_price.monthly')}</td>
               </tr>
               <tr>
-                <td colSpan={2} className="center-text">Minimissään käynnin kesto</td>
+                <td colSpan={2} className="center-text">{t('pricing.minimum_duration')}</td>
               </tr>
               <tr>
-                <td className="center-text">2 hours</td>
-                <td className="center-text">1.5 hours</td>
+                <td className="center-text">{t('pricing.cleaning_min_duration')}</td>
+                <td className="center-text">{t('pricing.assistance_min_duration')}</td>
               </tr>
               <tr className="additional-service">
-                <td colSpan={2} className="center-text">Lisäpalvelut (Siivouspalvelut)</td>
+                <td colSpan={2} className="center-text">{t('pricing.additional_services')}</td>
               </tr>
               <tr className="additional-service">
-                <td><RobotOutlined className="icon" />Ikkunapesurobotti siivouksen ajaksi: 20 €/h **</td>
+                <td><RobotOutlined className="icon" />{t('pricing.additional_services.robot')}</td>
                 <td></td>
               </tr>
               <tr className="additional-service">
-                <td><ClearOutlined className="icon" />Lattiapesuri: 25 €/h ***</td>
+                <td><ClearOutlined className="icon" />{t('pricing.additional_services.floor_cleaner')}</td>
                 <td></td>
               </tr>
             </tbody>
           </table>
-          <p className="pricing-note">* Hinnat sisältävät arvonlisäveron 25,5%.</p>
-          <p className="pricing-note">** Ikkunapesurobotti pesee ikkunoita siivouksen aikana täysin itsenäisesti. Robotti selviytyy todella korkeista ja isoista ikkunoista helposti.</p>
-          <p className="pricing-note">*** Lattiapesuri Kärcher FC7 tekee imuroinnin ja moppauksen yhdellä kertaa. Erilliset harjakset eri lattialaaduille. Tekee esim laattalattiasta todella puhtaan. Nopeuttaa lattian puhdistusta 40% ja tuo säästöä siivouskäynnin kestossa.</p>
+          <p className="pricing-note">{t('pricing.note.tax')}</p>
+          <p className="pricing-note">{t('pricing.note.robot')}</p>
+          <p className="pricing-note">{t('pricing.note.floor_cleaner')}</p>
         </div>
       </Reveal>
     </>

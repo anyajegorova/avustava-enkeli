@@ -14,7 +14,106 @@
         "Household chores, such as laundry and organizing",
         "Party arrangement assistance and serving",
         "Other various home services and personal services"
-      ]
+      ],
+      "hero": {
+        "title": "Home cleaning: from €41.50/hour",
+        "subtitle": "Reliable and high-quality cleaning and assistance services",
+        "contact_button": "Contact us",
+        "learn_more_button": "Learn more"
+      },
+      "intro_info": {
+        "title": "Cleaning and assistance services for households in Vantaa",
+        "description": "Everyday rush can sometimes feel overwhelming, but we are here to help! We offer professional cleaning and assistance services that make your life easier and more comfortable. We are a local company, and we provide personal and flexible services tailored to your needs."
+      },
+      "why_choose_us": {
+        "title": "Why choose us?",
+        "locality": {
+          "title": "LOCALITY",
+          "description": "We are nearby and understand your needs."
+        },
+        "professionalism": {
+          "title": "PROFESSIONALISM",
+          "description": "You can trust us and the high quality of our service."
+        },
+        "reliability": {
+          "title": "RELIABILITY",
+          "description": "Our work is meticulous and of high quality."
+        },
+        "flexibility": {
+          "title": "FLEXIBILITY",
+          "description": "We tailor services to suit your life situation."
+        }
+      },
+      "pricing": {
+        "title": "Service Pricing",
+        "cleaning_services": "Cleaning Services",
+        "assistance_services": "Assistance Services",
+        "frequency": {
+          "biweekly": "Every 1-2 weeks",
+          "monthly": "Once a month or one-time visit"
+        },
+        "cleaning_price": {
+          "biweekly": "€49/h *",
+          "monthly": "€59/h *"
+        },
+        "assistance_price": {
+          "biweekly": "€41.50/h *",
+          "monthly": "€51.50/h *"
+        },
+        "minimum_duration": "Minimum visit duration",
+        "cleaning_min_duration": "2 hours",
+        "assistance_min_duration": "1.5 hours",
+        "additional_services": "Additional Services (Cleaning Services)",
+        "additional_services.robot": "Window cleaning robot during cleaning: €20/h **",
+        "additional_services.floor_cleaner": "Floor cleaner: €25/h ***",
+        "note": {
+          "tax": "* Prices include 25.5% VAT.",
+          "robot": "** The window cleaning robot cleans windows independently during cleaning. It handles very tall and large windows with ease.",
+          "floor_cleaner": "*** The Kärcher FC7 floor cleaner vacuums and mops simultaneously. Separate brushes for different floor types. Makes tiled floors exceptionally clean. Speeds up floor cleaning by 40% and saves time during cleaning visits."
+        }
+      },
+      "cleaning_duration": {
+        "title": "Estimated Cleaning Duration",
+        "apartment_size": "Apartment Size (m²)",
+        "cleaning_time": "Cleaning Time",
+        "min": "Min",
+        "max": "Max",
+        "time": {
+          "2h": "2h",
+          "3h": "3h",
+          "4h": "4h",
+          "5h": "5h",
+          "6h": "6h"
+        },
+        "contact": "Contact us"
+      },
+      "contact_form": {
+        "title": {
+          "line1": "Get",
+          "line2": "in Touch"
+        },
+        "description": "Contact us for any reason! You can send a message to order cleaning or assistance services, ask questions, or for other matters. Fill out the form, and we will get back to you soon!",
+        "logo_alt": "Avustava Enkeli Logo",
+        "company_name_label": "Company Name",
+        "company_name": "Avustava Enkeli Oy",
+        "email_label": "Email",
+        "email": "toimisto@avustavaenkeli.fi",
+        "phone_label": "Phone Number",
+        "phone": "+358 50 597 55 35",
+        "address_label": "Address",
+        "address": "Finland, Vantaa",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "services": "Services",
+        "services_placeholder": "I am interested in...",
+        "cleaning_services": "Cleaning Services",
+        "assistance_services": "Assistance Services",
+        "other": "Other",
+        "details": "Details",
+        "details_placeholder": "Additional details",
+        "required_field": "Required field",
+        "submit": "Submit"
+      }
     }
   },
   "fi": {
@@ -32,7 +131,106 @@
         "Kodinhoitotyöt, kuten pyykkihuolto ja järjestely",
         "Juhlien järjestelyapu ja tarjoilijana toimiminen",
         "Muut erilaiset kotipalvelut ja henkilökohtaiset palvelut"
-      ]
+      ],
+      "hero": {
+        "title": "Kotisiivous: alk.41,50€/tunti",
+        "subtitle": "Luotettavia ja laadukkaita siivous- ja avustajapalveluita",
+        "contact_button": "Ota yhteyttä",
+        "learn_more_button": "Lue lisää"
+      },
+      "intro_info": {
+        "title": "Siivous- ja avustajapalvelut kotitalouksille Vantaalla",
+        "description": "Arjen kiireet voivat joskus tuntua ylitsepääsemättömiltä, mutta me olemme täällä auttamassa! Tarjoamme ammattitaitoisia siivous- ja avustajapalveluja, jotka tekevät elämästäsi helpompaa ja mukavampaa. Olemme paikallinen yritys, ja meiltä saat henkilökohtaista ja joustavaa palvelua juuri sinun tarpeisiisi."
+      },
+      "why_choose_us": {
+        "title": "Miksi valita meidät?",
+        "locality": {
+          "title": "PAIKALLISSUUS",
+          "description": "Olemme lähellä ja ymmärrämme sinun tarpeesi."
+        },
+        "professionalism": {
+          "title": "AMMATTITAITO",
+          "description": "Voit luottaa meihin ja palvelumme korkeaan tasoon."
+        },
+        "reliability": {
+          "title": "LUOTETTAVUUS",
+          "description": "Työnjälkemme on huolellista ja laadukasta."
+        },
+        "flexibility": {
+          "title": "JOUSTAVUUS",
+          "description": "Räätälöimme palvelut elämäntilanteesi mukaan."
+        }
+      },
+      "pricing": {
+        "title": "Palvelujen hinnottelu",
+        "cleaning_services": "Siivouspalvelut",
+        "assistance_services": "Avustajapalvelut",
+        "frequency": {
+          "biweekly": "1-2 viikon välein",
+          "monthly": "Kerran kuussa tai kertakäynti"
+        },
+        "cleaning_price": {
+          "biweekly": "49 €/t *",
+          "monthly": "59 €/t *"
+        },
+        "assistance_price": {
+          "biweekly": "41,50 €/t *",
+          "monthly": "51,50 €/t *"
+        },
+        "minimum_duration": "Minimissään käynnin kesto",
+        "cleaning_min_duration": "2 tuntia",
+        "assistance_min_duration": "1,5 tuntia",
+        "additional_services": "Lisäpalvelut (Siivouspalvelut)",
+        "additional_services.robot": "Ikkunapesurobotti siivouksen ajaksi: 20 €/t **",
+        "additional_services.floor_cleaner": "Lattiapesuri: 25 €/t ***",
+        "note": {
+          "tax": "* Hinnat sisältävät arvonlisäveron 25,5%.",
+          "robot": "** Ikkunapesurobotti pesee ikkunoita siivouksen aikana täysin itsenäisesti. Robotti selviytyy todella korkeista ja isoista ikkunoista helposti.",
+          "floor_cleaner": "*** Lattiapesuri Kärcher FC7 tekee imuroinnin ja moppauksen yhdellä kertaa. Erilliset harjakset eri lattialaaduille. Tekee esim laattalattiasta todella puhtaan. Nopeuttaa lattian puhdistusta 40% ja tuo säästöä siivouskäynnin kestossa."
+        }
+      },
+      "cleaning_duration": {
+        "title": "Arvio siivouksen kestoajasta",
+        "apartment_size": "Asunnon koko (m²)",
+        "cleaning_time": "Siivousaika",
+        "min": "Min",
+        "max": "Max",
+        "time": {
+          "2h": "2t",
+          "3h": "3t",
+          "4h": "4t",
+          "5h": "5t",
+          "6h": "6t"
+        },
+        "contact": "ota yhteyttä"
+      },
+      "contact_form": {
+        "title": {
+          "line1": "Ota",
+          "line2": "yhteyttä"
+        },
+        "description": "Ota meihin yhteyttä mistä tahansa syystä! Voit lähettää viestin esimerkiksi siivouspalvelun tai avustajapalvelun tilaamiseen, kysymyksiin tai muihin asioihin. Täytä lomake, niin palaamme sinulle pian!",
+        "logo_alt": "Avustava Enkeli Logo",
+        "company_name_label": "Yrityksen nimi",
+        "company_name": "Avustava Enkeli Oy",
+        "email_label": "Sähköposti",
+        "email": "toimisto@avustavaenkeli.fi",
+        "phone_label": "Puhelinumero",
+        "phone": "+358 50 597 55 35",
+        "address_label": "Osoite",
+        "address": "Suomi, Vantaa",
+        "first_name": "Etunimi",
+        "last_name": "Sukunimi",
+        "services": "Palvelut",
+        "services_placeholder": "Minua kiinnostaa..",
+        "cleaning_services": "Siivouspalvelut",
+        "assistance_services": "Avustajapalvelut",
+        "other": "Muu",
+        "details": "Tarkemmat tiedot",
+        "details_placeholder": "Tarkemmat tiedot",
+        "required_field": "Pakollinen kenttä",
+        "submit": "Lähetä"
+      }
     }
   }
 }
